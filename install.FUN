@@ -2,7 +2,7 @@
 # DEBUG code:
 # dir=tgCam; rm -rf $dir; git clone https://github.com/vasyl-belyey/${dir}.git; . ./$dir/install.FUN; read -p "REMOVE? " answer; if [ -d "$dir" ] && ! [ -z "$answer" ]; then rm -rf "$dir"; fi; echo; ll
 #
-local dirZz=$(pwd)
+dirZtgCam=$(pwd)
 if dirMY=$(find . -name tgCam); then cd "$dirMY"; fi
 #
 # Functions:
@@ -23,8 +23,8 @@ printColored green "\n\n\n\t\t\t Okay. \n\n"
 #
 # END
 printf "\n\n\n"
-echo " dirZz = '${dirZz}'"
-if ! [ -z "$dirZz" ]; then cd "$dirZz"; fi
+echo " dirZtgCam = '${dirZtgCam}'"
+if ! [ -z "$dirZtgCam" ]; then cd "$dirZtgCam"; fi
 pwd
 return $retCode
 # eof
