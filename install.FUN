@@ -2,7 +2,7 @@
 # DEBUG code:
 # dir=tgCam; rm -rf $dir; git clone https://github.com/vasyl-belyey/${dir}.git; . ./$dir/install.FUN; read -p "REMOVE? " answer; if [ -d "$dir" ] && ! [ -z "$answer" ]; then rm -rf "$dir"; fi; echo; ll
 #
-dirZ=$(pwd)
+local dirZ=$(pwd)
 if dirMY=$(find . -name tgCam); then cd "$dirMY"; fi
 #
 # Functions:
@@ -24,5 +24,6 @@ printColored green "\n\n\n\t\t\t Okay. \n\n"
 # END
 printf "\n\n\n"
 if ! [ -z "$dirZ" ]; then cd "$dirZ"; fi
+pwd
 return $retCode
 # eof
