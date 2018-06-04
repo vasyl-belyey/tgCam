@@ -16,9 +16,10 @@ if ! [ -d shell ]; then
 	. shell/initSHELL.FUN
 fi
 #
-. printColored.fun
+. includeAll.fun
 #
-printColored green "\n\n\n\t\t\t Okay. \n\n"
+printColored green "\n\n\n\t\t\t Okay.  Let's begin... \n\n"
+sleepVB
 # Main:
 make
 #
