@@ -19,7 +19,7 @@ fi
 . includeAll.fun
 #
 printColored green "\n\n\n\t\t\t Okay.  Let's begin... \n\n"
-sleepVB -
+sleepVB -n 13
 return 13
 # Main:
 make
