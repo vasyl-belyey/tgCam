@@ -20,6 +20,7 @@ fi
 #
 printColored green "\n\n\n\t\t\t Okay. \n\n"
 # Main:
+make
 #
 # END
 printf "\n\n\n"
