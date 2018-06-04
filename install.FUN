@@ -23,6 +23,7 @@ printColored green "\n\n\n\t\t\t Okay. \n\n"
 #
 # END
 printf "\n\n\n"
+echo " dirZ = '${dirZ}'"
 if ! [ -z "$dirZ" ]; then cd "$dirZ"; fi
 pwd
 return $retCode
